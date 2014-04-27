@@ -1,0 +1,74 @@
+{% include left %}
+	<div class='right-container'>
+		<div class='post-item'>
+			<div>
+				<h1><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h1>
+				<div><span class='iconfont date'>&#xf0092;</span>
+					<span>{{ page.date | date: "%Y" }} {{ page.date | date: "%b" }} {{ page.date | date: "%d" }}</span>
+				</div>	
+				<div class='description'>	
+					<p>{{ page.description }}</p>
+					<img src='{{ site.url }}/assert/img/{{ page.thumbimg }}' />
+				</div>
+				<div class='qrcode'></div>
+				<!-- begin post -->
+				<div class='post'>{{ content }}</div>
+				<!-- end post -->
+
+
+				<!-- JiaThis Button BEGIN -->
+				<div class="jiathis_style pull-right">
+					<a class="jiathis_button_tsina"></a>
+					<a class="jiathis_button_tqq"></a>
+					<a class="jiathis_button_weixin"></a>
+					<a class="jiathis_button_renren"></a>
+					<a class="jiathis_button_douban"></a>
+					<a class="jiathis_button_fb"></a>
+					<a class="jiathis_button_twitter"></a>
+					<a class="jiathis_button_evernote"></a>
+					<a class="jiathis_button_qzone"></a>
+					<a class="jiathis_button_ydnote"></a>
+					<a class="jiathis_button_linkedin"></a>
+					<a href="http://www.jiathis.com/share?uid=1900073" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+					<a class="jiathis_counter_style"></a>
+				</div>
+				<script type="text/javascript">
+				var jiathis_config = {data_track_clickback:'true'};
+				</script>
+				<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=1900073" charset="utf-8"></script>
+				<!-- JiaThis Button END -->
+
+
+				<div class='clearfix'></div>
+				<div>
+					{% for cat in page.categories %}
+						<category><a href="{{ site.baseurl }}/category.html#{{ cat }}">{{ cat }}</a></category>
+					{% endfor %}
+				</div>
+				<div>
+					{% for tag in page.tags %}
+						<tag><a href="{{ site.baseurl }}/tag.html#{{ tag }}">{{ tag }}</a></tag>
+					{% endfor %}
+				</div>
+
+				<div class='clearfix'>
+					{% if page.previous %}
+					<span class='iconfont pull-left' style='padding: 4px;'>&#x3432;</span>
+					<span class='pull-left'>上一篇：<a href="{{ page.previous.url  }}">{{ page.previous.title }}</a></span> 
+					{% endif %}
+					{% if page.next %}
+					<span class='iconfont pull-right' style='padding: 4px;'>&#x3434;</span>
+					<span class='pull-right'>下一篇：<a href="{{ page.next.url  }}">{{ page.next.title }}</a></span>
+					{% endif %}
+				</div>
+				
+			</div>
+
+			<div id="disqus_thread"></div>
+			{% include disqus %}
+		</div>
+	</div>
+    {{ page.buttomstript }}
+</body>
+
+</html>
