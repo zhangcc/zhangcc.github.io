@@ -39,7 +39,7 @@
 		<div class='left-container'>
 			<div class="mini-collapse">
 				<h3>Zixiao Space</h3>
-				<a id='toggle-menu' href='javascript:void(0)'>&#xf0000;</a>
+				<a id='toggle-menu' href='javascript:void(0)'>&#xf0025;</a>
 			</div>
 			<div class='clearfix'></div>
 			<div id='menu-info' class='collapse'>
