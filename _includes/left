@@ -6,7 +6,7 @@
 		{% if page  %}
 			<title>{{ page.title }} - {{ page.description }}</title>
 		{%  else %}
-			<title>P_Chou Tech Space</title>
+			<title>Zixiao Space</title>
 		{% endif %}
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -26,7 +26,7 @@
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-37440538-1', 'pchou.info');
+		  ga('create', 'UA-37440538-1', 'zixiao.tk');
 		  ga('send', 'pageview');
 
 		</script>
@@ -38,14 +38,14 @@
 		<div id="gotop">&#x343e;</div>
 		<div class='left-container'>
 			<div class="mini-collapse">
-				<h3>P_Chou Tech Space</h3>
+				<h3>Zixiao Space</h3>
 				<a id='toggle-menu' href='javascript:void(0)'>&#xf0025;</a>
 			</div>
 			<div class='clearfix'></div>
 			<div id='menu-info' class='collapse'>
 				<div class='center left-item'>
-					<h1>P_Chou</h1>
-					<h1>Tech Space</h1>
+					<h1>Zixiao</h1>
+					<h1>Space</h1>
 				</div>
 				<div class='navigator center left-item'>
 					<a href='/index.html' title='首页'>&#xf012b;</a>
