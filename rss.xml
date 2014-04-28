@@ -1,11 +1,11 @@
 ---
 layout: rss
-title: P_Chou Tech Space
+title: Zixiao Space
 ---
 {% for post in site.posts %}
 　　<item> 
 	　　<title>{{ post.title }}</title>
-	　　<link>http://pchou.info{{ site.baseurl }}{{ post.url }}</link>
+	　　<link>http://zixiao.tk{{ site.baseurl }}{{ post.url }}</link>
 	　　<description>{{ post.description }}</description>
 　　</item>
 {% endfor %}
