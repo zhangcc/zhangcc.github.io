@@ -30,7 +30,7 @@ $(function(){
     // });
     goTop();//实现回到顶部元素的渐显与渐隐
 
-    var opt = { text : window.location.href, width:100, height:150 };
+    var opt = { text : window.location.href, width:10, height:150 };
 
 	try {
 		document.createElement("canvas").getContext("2d");
